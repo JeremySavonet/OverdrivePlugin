@@ -17,10 +17,12 @@ addons:
       - cmake
 
 before_install:
+  - cd
   - git clone --depth=1 --branch=5.2.1 https://github.com/JeremySavonet/JUCE.git
   - git clone --recursive https://github.com/steinbergmedia/vst3sdk.git
   - cd vst3sdk && git checkout vstsdk367_03_03_2017_build_352
   - git submodule update --recursive
+  - pwd
 
 # Build steps
 script:
@@ -28,5 +30,5 @@ script:
   - pwd
   - mkdir cmake-build-debug && cd cmake-build-debug
   - pwd
-    #- cmake ..
+  - cmake ..
     #- make STANDALONE_PLUGIN
