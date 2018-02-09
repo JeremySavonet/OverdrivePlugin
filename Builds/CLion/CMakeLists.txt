@@ -2687,7 +2687,7 @@ set_target_properties (VST PROPERTIES
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-VST.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Debug-Info-VST.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -2696,7 +2696,7 @@ set_target_properties (VST PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-VST.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Debug-Info-VST.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION vst
@@ -2767,7 +2767,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-VST3.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Debug-Info-VST3.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST3/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -2776,7 +2776,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-VST3.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Debug-Info-VST3.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION vst3
@@ -2836,7 +2836,7 @@ target_compile_options (AU PRIVATE
 
 if (RC_COMPILER)
     set (AU_REZ_SOURCES
-        "/Users/savonetj/Documents/PERSO/OverdrivePlugin/JuceLibraryCode/include_juce_audio_plugin_client_AU.r"
+        "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r"
     )
     set (AU_REZ_OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/Overrdrive.rsrc")
     target_sources (AU PRIVATE
@@ -2872,7 +2872,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-AU.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Debug-Info-AU.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/Components/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -2881,7 +2881,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-AU.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Debug-Info-AU.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION component
@@ -2951,13 +2951,13 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_COPY_PHASE_STRIP NO
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-Standalone_Plugin.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Debug-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_MACOSX_DEPLOYMENT_TARGET_ppc 10.4
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.savonetj.Overdrive
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Debug-Info-Standalone_Plugin.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Debug-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     MACOSX_BUNDLE TRUE
 )
@@ -3097,7 +3097,7 @@ set_target_properties (VST PROPERTIES
     XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-VST.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Release-Info-VST.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -3106,7 +3106,7 @@ set_target_properties (VST PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-VST.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Release-Info-VST.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION vst
@@ -3179,7 +3179,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-VST3.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Release-Info-VST3.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST3/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -3188,7 +3188,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-VST3.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Release-Info-VST3.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION vst3
@@ -3249,7 +3249,7 @@ target_compile_options (AU PRIVATE
 
 if (RC_COMPILER)
     set (AU_REZ_SOURCES
-        "/Users/savonetj/Documents/PERSO/OverdrivePlugin/JuceLibraryCode/include_juce_audio_plugin_client_AU.r"
+        "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r"
     )
     set (AU_REZ_OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/Overrdrive.rsrc")
     target_sources (AU PRIVATE
@@ -3286,7 +3286,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_GENERATE_PKGINFO_FILE YES
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-AU.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Release-Info-AU.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/Components/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
@@ -3295,7 +3295,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-AU.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Release-Info-AU.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     BUNDLE TRUE
     BUNDLE_EXTENSION component
@@ -3367,13 +3367,13 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_GCC_GENERATE_DEBUGGING_SYMBOLS NO
     XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-Standalone_Plugin.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "./Release-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_MACOSX_DEPLOYMENT_TARGET_ppc 10.4
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.savonetj.Overdrive
     XCODE_ATTRIBUTE_SDKROOT_ppc macosx10.5
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
-    MACOSX_BUNDLE_INFO_PLIST "/Users/savonetj/Documents/PERSO/OverdrivePlugin/Builds/CLion/Release-Info-Standalone_Plugin.plist"
+    MACOSX_BUNDLE_INFO_PLIST "./Release-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "Overrdrive"
     MACOSX_BUNDLE TRUE
 )
