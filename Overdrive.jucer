@@ -3,7 +3,7 @@
 <JUCERPROJECT id="ooSLLE" name="Overrdrive" displaySplashScreen="1" reportAppUsage="1"
               splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
               bundleIdentifier="com.savonetj.Overdrive" includeBinaryInAppConfig="1"
-              cppLanguageStandard="11" companyCopyright="" jucerVersion="5.2.0"
+              cppLanguageStandard="11" companyCopyright="" jucerVersion="5.2.1"
               buildVST="1" buildVST3="1" buildAU="1" buildAUv3="0" buildRTAS="0"
               buildAAX="0" buildStandalone="1" enableIAA="0" pluginName="Overdrive"
               pluginDesc="Overdirive" pluginManufacturer="savonetj" pluginManufacturerCode="Manu"
