@@ -1,15 +1,12 @@
 # Copyrights (c) 2018 Jeremy Savonet
 
-dist: trusty
-
-sudo: required
+os: osx
 
 language:
   - cpp
 
 compiler:
   - clang
-  - gcc
 
 addons:
   apt:
@@ -18,17 +15,25 @@ addons:
 
 before_install:
   - cd
+  - ls
   - git clone --depth=1 --branch=5.2.1 https://github.com/JeremySavonet/JUCE.git
+  - cd
+  - ls
   - git clone --recursive https://github.com/steinbergmedia/vst3sdk.git
   - cd vst3sdk && git checkout vstsdk367_03_03_2017_build_352
   - git submodule update --recursive
-  - pwd
+  - cd && ls
 
 # Build steps
 script:
+  - cd ${TRAVIS_BUILD_DIR}
+  - ls
   - cd ${TRAVIS_BUILD_DIR}/Builds/CLion
   - pwd
+  - ls
   - mkdir cmake-build-debug && cd cmake-build-debug
   - pwd
+  - ls
   - cmake ..
-    #- make STANDALONE_PLUGIN
+  - ls
+  - make STANDALONE_PLUGIN
