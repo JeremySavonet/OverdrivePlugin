@@ -1,0 +1,25 @@
+# Copyrights (c) 2018 Jeremy Savonet
+
+dist: trusty
+
+sudo: required
+
+language:
+  - cpp
+
+compiler:
+  - clang
+  - gcc
+
+addons:
+  apt:
+    packages:
+      - cmake
+
+# Build steps
+script:
+  - cd ${TRAVIS_BUILD_DIR}/Builds/CLion
+  - mkdir cmake-build-debug && cd cmake-build-debug
+  - cmake ..
+  - cd ${TRAVIS_BUILD_DIR}
+  - cmake --build Builds/CLion/cmake-build-debug --target STANDALONE_PLUGIN -- -j7
