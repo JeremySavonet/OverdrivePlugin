@@ -19,7 +19,8 @@ addons:
 # Build steps
 script:
   - cd ${TRAVIS_BUILD_DIR}/Builds/CLion
+  - pwd
   - mkdir cmake-build-debug && cd cmake-build-debug
-  - cmake ..
-  - cd ${TRAVIS_BUILD_DIR}
-  - cmake --build Builds/CLion/cmake-build-debug --target STANDALONE_PLUGIN -- -j7
+  - pwd
+    #- cmake ..
+    #- make STANDALONE_PLUGIN
